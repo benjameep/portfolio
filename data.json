@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "title": "Techops Toggl Tracker",
+      "tags": [
+        "webpack",
+        "ejs",
+        "CORS",
+        "api",
+        "Toggl",
+        "d3",
+        "SPA",
+        "Primer"
+      ],
+      "description": "",
+      "image": "",
+      "link": "",
+      "date": "",
+      "hours": ""
+    }
+  ],
+  "tags": {
+    "webpack": "rgb(110, 64, 170)",
+    "ejs": "rgb(223, 64, 161)",
+    "CORS": "rgb(255, 112, 78)",
+    "api": "rgb(210, 201, 52)",
+    "Toggl": "rgb(107, 247, 92)",
+    "d3": "rgb(27, 217, 172)",
+    "SPA": "rgb(57, 136, 225)"
+  }
+}
