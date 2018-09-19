@@ -11,4 +11,8 @@
 }
 #header .links .icon {
   margin-right:0px;
+  color:black;
+}
+#header .links .icon:hover {
+  color:#1e70bf;
 }

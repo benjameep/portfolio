@@ -1,31 +1,255 @@
 {
-  "projects": [
-    {
-      "title": "Techops Toggl Tracker",
-      "tags": [
-        "webpack",
-        "ejs",
-        "CORS",
-        "api",
-        "Toggl",
-        "d3",
-        "SPA",
-        "Primer"
-      ],
-      "description": "",
-      "image": "",
-      "link": "",
-      "date": "",
-      "hours": ""
-    }
-  ],
-  "tags": {
-    "webpack": "rgb(110, 64, 170)",
-    "ejs": "rgb(223, 64, 161)",
-    "CORS": "rgb(255, 112, 78)",
-    "api": "rgb(210, 201, 52)",
-    "Toggl": "rgb(107, 247, 92)",
-    "d3": "rgb(27, 217, 172)",
-    "SPA": "rgb(57, 136, 225)"
-  }
+  "projects": [{
+    "title": "Program Visualization",
+    "tags": ["d3"],
+    "description": "Previous work of mine (the BYU-I Course Requisite Graph) had gotten into the hands of Academic Advising, and they brought me in to see if I could imporove on the concept. So I learned D3, poured over a bunch of scholarly articles on how to generate visualizations of DAGs (Directed Acyclic Graphs). After 10 different attempts and almost declaring it impossible three times (never out loud), something actually started to form. This project still has a lot of refining to go, but is on track to become accepted by the university and used by the entire school.",
+    "image": "program.png",
+    "code": "https://github.com/byuitechops/program-visualization",
+    "link": "https://byuitechops.github.io/program-visualization/backtothestart/programs/accounting.html",
+    "date": "August - Current",
+    "hours": "+200"
+  },{
+    "title": "Canvas Api Wrapper",
+    "tags": ["api","NodeJs"],
+    "description": "My school is shifting over to using Instructure's Canvas as thier LMS. As our dev team deals primarily with the LMS we use their API a lot. So I volunteered to write a NodeJs wrapper for the Canvas API. I was able to abstract 70% of the Canvas API and optimized parallelism to be almost twice as fast our previous API wrapper. It is now used by our entire team and has 12-50 downloads per week on npm.",
+    "image": "canvas.png",
+    "code": "https://github.com/byuitechops/canvas-api-wrapper",
+    "link": "https://www.npmjs.com/package/canvas-api-wrapper",
+    "date": "May-July 2018",
+    "hours": "180"
+  },{
+    "title": "Techops Toggl Tracker",
+    "tags": ["webpack","ejs","CORS","api","d3","Primer","oauth2","firebase"],
+    "description": "Our dev team works on so many small projects that it is difficult for each person to remeber all the projects they have going on, let alone all the projects for the entire team. Our team also lacks a system of tracking how much time is put into each project. So I created a Single Page Application that completly client-side (our team doesn't have a server) Oauth's with Github, retrieves data from <a href=\"toggl.com\">Toggl's API</a>, updates firebase, and displays with d3 when a project is worked on, the bandwidth it is taking of the team, and history of the project. This project has been put on hold for now, but will be picked back up and implemented soon.",
+    "image": "toggltrack.png",
+    "code": "https://github.com/benjameep/techops-toggl-tracker",
+    "link": "",
+    "date": "July 2018",
+    "hours": "40"
+  },{
+    "title": "Dot Code",
+    "tags": ["d3","d3-simulation"],
+    "description": "I have long been fasinated by ciphers and codes. And expecially like ciphers where anyone can figure out by staring at for long enough. I had the idea to create this sort of connect the dots cipher which achieves that goal. The problem is that it is pain-stakingly slow to create by hand. But by using d3-simulation I can generate all of the random scattered particles that the cipher required.",
+    "image": "dotcode.png",
+    "code": "https://github.com/benjameep/dot-code",
+    "link": "http://benjameep.github.io/dot-code",
+    "date": "July 2018",
+    "hours": "5"
+  },{
+    "title": "BYU-I Student Map",
+    "tags": [],
+    "description": "",
+    "image": "studentmap.png",
+    "code": "https://github.com/benjameep/byui-student-map",
+    "link": "http://benjameep.github.io/byui-student-map",
+    "date": "June 2018",
+    "hours": "8"
+  },{
+    "title": "Courseplan",
+    "tags": [],
+    "description": "",
+    "image": "courseplan.png",
+    "code": "https://github.com/benjameep/courseplan",
+    "link": "http://benjameep.github.io/courseplan",
+    "date": "June 2018",
+    "hours": "20"
+  },{
+    "title": "FDHUM 110",
+    "tags": [],
+    "description": "",
+    "image": "fdhum.png",
+    "code": "https://github.com/benjameep/fdhum110",
+    "link": "http://benjameep.github.io/fdhum110",
+    "date": "April 2018",
+    "hours": "12"
+  },{
+    "title": "obj-iterate",
+    "tags": [],
+    "description": "",
+    "image": "npm.png",
+    "code": "https://github.com/benjameep/obj-iterate",
+    "link": "https://www.npmjs.com/package/obj-iterate",
+    "date": "March 2018",
+    "hours": "5"
+  },{
+    "title": "Scripture Injection",
+    "tags": [],
+    "description": "",
+    "image": "scripture.png",
+    "code": "https://github.com/benjameep/scripture-injection",
+    "link": "http://benjameep.github.io/scripture-injection",
+    "date": "Febuary 2018",
+    "hours": "7"
+  },{
+    "title": "Twitter Queueit SMS",
+    "tags": [],
+    "description": "",
+    "image": "twitter.png",
+    "code": "https://github.com/benjameep/twitter-queueit-sms",
+    "link": "",
+    "date": "January 2018",
+    "hours": "6"
+  },{
+    "title": "Word Sorter",
+    "tags": [],
+    "description": "",
+    "image": "wordsort.png",
+    "code": "https://github.com/benjameep/amy-words",
+    "link": "http://benjameep.github.io/amy-words",
+    "date": "October 2017",
+    "hours": "18"
+  },{
+    "title": "BYU-I Course Requisite Graph",
+    "tags": [],
+    "description": "",
+    "image": "reqmap.png",
+    "code": "https://github.com/benjameep/byui-req-graph",
+    "link": "http://benjameep.github.io/byui-req-graph",
+    "date": "October 2017",
+    "hours": "25"
+  },{
+    "title": "Gradplanner",
+    "tags": [],
+    "description": "",
+    "image": "gradplan.png",
+    "code": "https://github.com/benjameep/gradplanner",
+    "link": "",
+    "date": "September - October 2017",
+    "hours": "120"
+  },{
+    "title": "Falling Block Maze",
+    "tags": [],
+    "description": "",
+    "image": "falling.png",
+    "code": "https://github.com/benjameep/falling-block-maze",
+    "link": "http://benjameep.github.io/falling-block-maze",
+    "date": "October 2017",
+    "hours": "45"
+  },{
+    "title": "Word Manipulation Path Finder",
+    "tags": [],
+    "description": "",
+    "image": "wordgraph.png",
+    "code": "https://github.com/benjameep/word-grapher",
+    "link": "",
+    "date": "August 2017",
+    "hours": "4"
+  },{
+    "title": "night-map",
+    "tags": [],
+    "description": "",
+    "image": "npm.png",
+    "code": "https://github.com/benjameep/night-map",
+    "link": "https://www.npmjs.com/package/night-map",
+    "date": "May 2017",
+    "hours": "6"
+  },{
+    "title": "Combinatorics Clock",
+    "tags": [],
+    "description": "",
+    "image": "combi.png",
+    "code": "https://github.com/benjameep/combi-clock",
+    "link": "http://benjameep.github.io/combi-clock",
+    "date": "April 2017",
+    "hours": "6"
+  },{
+    "title": "Square Pie Chart",
+    "tags": [],
+    "description": "Huffman tree",
+    "image": "pie.png",
+    "code": "https://github.com/benjameep/square-pie-charts",
+    "link": "http://benjameep.github.io/square-pie-charts",
+    "date": "March 2017",
+    "hours": "6"
+  },{
+    "title": "Monopoly Game Simulator",
+    "tags": [],
+    "description": "",
+    "image": "monop.png",
+    "code": "https://github.com/benjameep/monop-probs",
+    "link": "",
+    "date": "Febuary 2017",
+    "hours": "25"
+  },{
+    "title": "Adobe Api Runner",
+    "tags": [],
+    "description": "",
+    "image": "adobe.png",
+    "code": "https://github.com/byuitechops/adobe-api-runner",
+    "link": "",
+    "date": "Febuary - March 2017",
+    "hours": "130"
+  },{
+    "title": "Android Lock Combinations",
+    "tags": ["snap","svg"],
+    "description": "",
+    "image": "lock.png",
+    "code": "https://github.com/benjameep/android-lock",
+    "link": "http://benjameep.github.io/android-lock",
+    "date": "Febuary 2017",
+    "hours": "11"
+  },{
+    "title": "Post-Fix Truth Table Generator",
+    "tags": [],
+    "description": "",
+    "image": "truthtable.png",
+    "code": "https://github.com/benjameep/truth-table",
+    "link": "",
+    "date": "January 2017",
+    "hours": "3"
+  },{
+    "title": "Encrypter",
+    "tags": [],
+    "description": "",
+    "image": "encrypt.png",
+    "code": "https://github.com/benjameep/encrypter",
+    "link": "http://benjameep.github.io/encrypter",
+    "date": "January 2017",
+    "hours": "15"
+  },{
+    "title": "Predictopoly",
+    "tags": [],
+    "description": "",
+    "image": "predictopoly.png",
+    "code": "https://github.com/benjameep/predictopoly",
+    "link": "http://benjameep.github.io/predictopoly",
+    "date": "December 2016",
+    "hours": "50"
+  },{
+    "title": "Illusion Creator",
+    "tags": [],
+    "description": "",
+    "image": "illusion.png",
+    "code": "https://github.com/benjameep/illusion-creator",
+    "link": "http://benjameep.github.io/illusion-creator",
+    "date": "November 2016",
+    "hours": "60"
+  },{
+    "title": "Tessellation Creator",
+    "tags": [],
+    "description": "",
+    "image": "tessell.png",
+    "code": "https://github.com/benjameep/tessellations",
+    "link": "http://benjameep.github.io/tessellations",
+    "date": "October 2016",
+    "hours": "40"
+  },{
+    "title": "Conway's Game of Life",
+    "tags": [],
+    "description": "",
+    "image": "conway.png",
+    "code": "https://github.com/benjameep/game-of-life",
+    "link": "http://benjameep.github.io/game-of-life",
+    "date": "2016",
+    "hours": "50"
+  },{
+    "title": "Snake",
+    "tags": [],
+    "description": "",
+    "image": "snake.png",
+    "code": "https://github.com/benjameep/snake",
+    "link": "http://benjameep.github.io/snake",
+    "date": "2016",
+    "hours": "30"
+  }]
 }

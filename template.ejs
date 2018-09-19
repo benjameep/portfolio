@@ -7,9 +7,9 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="ui container">
     <div id="header">
-      <img class="ui centered small circular image" src="pictures/profile.jpg"/>
+      <img class="ui centered small circular image" src="pictures/profile.jpg" />
       <h1 class="ui centered aligned huge header">
         Benjamin Earl
         <br/>
@@ -29,23 +29,32 @@
       </h1>
     </div>
     <div class="ui divided items">
+      <%_ projects.forEach(project => { _%>
       <div class="item">
         <div class="image">
+          <%_ if(project.image){ _%>
+          <img src="pictures/<%= project.image %>">
+          <%_ } _%>
         </div>
         <div class="content">
-          <a class="header">12 Years a Slave</a>
+          <a class="header" href="<%= project.link %>"><%= project.title %></a>
           <div class="meta">
-            <span class="cinema">Union Square 14</span>
+            <span class="hours"><%= project.hours %> hours</span>
+            <span class="date"><%= project.date %></span>
           </div>
           <div class="description">
-            <p></p>
+            <%_ project.description.split('\n').forEach(paragraph => { _%>
+            <p><%- paragraph %></p>
+            <%_ }) _%>
           </div>
           <div class="extra">
-            <div class="ui label">IMAX</div>
-            <div class="ui label"><i class="globe icon"></i> Additional Languages</div>
+            <%_ project.tags.forEach(tag => { _%>
+            <div class="ui label"><%= tag %></div>
+            <%_ }) _%>
           </div>
         </div>
       </div>
+      <%_ }) _%>
     </div>
   </div>
 </body>
