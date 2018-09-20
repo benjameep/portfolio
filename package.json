@@ -5,14 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "ejs-cli src/template.ejs -O src/data.json > index.html"
+    "build": "node ./src/build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "d3-scale-chromatic": "^1.3.3",
-    "ejs-cli": "^2.0.1",
-    "semantic-ui": "^2.4.0"
+    "ejs": "^2.6.1"
   }
 }
