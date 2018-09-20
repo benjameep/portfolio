@@ -1,0 +1,65 @@
+<html>
+
+<head>
+  <title>Benjameep Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="semantics/semantic.min.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body>
+  <div class="ui container">
+    <div id="header">
+      <img class="ui centered small circular image" src="pictures/profile.jpg" />
+      <h1 class="ui centered aligned huge header">
+        Benjamin Earl
+        <br/>
+        <div class="content">
+          <div class="ui sub header">
+            @benjameep
+          </div>
+          <div class="links">
+            <a href="https://github.com/benjameep">
+              <i class="ui small github icon"></i>
+            </a>
+            <a href="https://www.npmjs.com/~benjameep">
+              <i class="ui small npm icon"></i>
+            </a>
+          </div>
+        </div>
+      </h1>
+    </div>
+    <div class="ui divided items">
+      <%_ projects.forEach(project => { _%>
+      <div class="item">
+        <a class="image" href="<%= project.link||project.code %>">
+          <%_ if(project.image){ _%>
+          <img src="pictures/<%= project.image %>">
+          <%_ } _%>
+        </a>
+        <div class="content">
+          <a class="header" href="<%= project.link||project.code %>"><%= project.title %></a>
+          <a href="<%= project.code %>"><i class="code link icon"></i></a>
+          <div class="meta">
+            <span class="hours"><%= project.hours %> hours</span>
+            <span class="date"><%= project.date %></span>
+          </div>
+          <div class="description">
+            <%_ project.description.split('\n').forEach(paragraph => { _%>
+            <p><%- paragraph %></p>
+            <%_ }) _%>
+          </div>
+          <div class="extra">
+            <%_ project.tags.forEach(tag => { _%>
+            <div class="ui label"><%= tag %></div>
+            <%_ }) _%>
+          </div>
+        </div>
+      </div>
+      <%_ }) _%>
+    </div>
+  </div>
+</body>
+
+</html>
