@@ -196,7 +196,7 @@
             <span class="date">March 2018</span>
           </div>
           <div class="description">
-            <p>I often get frustrated that in JS it is difficult to iterate through an object and even more difficult to 'reduce' or 'filter' the entries in an object. So I built this library to supply that functionality for me.</p>
+            <p>I often get frustrated that in JS it is difficult to iterate through an object and even more difficult to 'reduce' or 'filter' the entries in an object. So, I built this library to supply that functionality for me.</p>
           </div>
           <div class="extra">
             <div class="ui label">npm</div>
@@ -215,9 +215,10 @@
             <span class="date">Febuary 2018</span>
           </div>
           <div class="description">
-            <p></p>
+            <p>I prefer to listen to reading assignments in school, so I will copy and paste the reading into a text to speech program. But for one of my religion classes the reading was mixed with scripture references which were also required reading. So not only did you have to switch back and forth from the reading to the scriptures, but it also meant that I couldn't copy and paste all of the text into the speech program. So, I wrote a script which found the scripture references, scraped the scripture off of lds.org, and injected it into the reading underneath the corresponding reference.</p>
           </div>
           <div class="extra">
+            <div class="ui label">web scraping</div>
           </div>
         </div>
       </div>
@@ -233,9 +234,13 @@
             <span class="date">January 2018</span>
           </div>
           <div class="description">
-            <p></p>
+            <p>The Queue-It system redirects traffic off websites which are having a large event into an offsite queue then slowly feeds them back. My challenge was to find when these events occur. As it is often frustrating to users I figured that people probably rant about it on social media. So, I set up a server to search Twitter for mentions of Queue-it every ten minutes, then send me a text whenever it finds a new mention. It worked pretty well after I told it to stop waking me up in the middle of the night.</p>
           </div>
           <div class="extra">
+            <div class="ui label">aws</div>
+            <div class="ui label">twillio</div>
+            <div class="ui label">twitter</div>
+            <div class="ui label">api</div>
           </div>
         </div>
       </div>
@@ -251,9 +256,10 @@
             <span class="date">October 2017</span>
           </div>
           <div class="description">
-            <p></p>
+            <p>A friend of mine was working on a project where they wanted to take a phrase then rearrange the words into a different message. This is surprisingly difficult to do on paper, so they asked me if I could make a program which could help with the process. So, I wrote this small site which resembles those magnet words on the refrigerator. Where you enter the message on the top, and they appear on a magnet board which you can rearrange and group together, then write your reconfigured message in the second box and the words disappear off the board.</p>
           </div>
           <div class="extra">
+            <div class="ui label">canvas</div>
           </div>
         </div>
       </div>
@@ -269,7 +275,7 @@
             <span class="date">October 2017</span>
           </div>
           <div class="description">
-            <p></p>
+            <p>One of my goals in scraping data off the BYU-I Course Catalog was to create a little requisite chart for each course. The little charts never formed to my liking, but I realized that it was possible for me to create a chart for every single course in the school. It took a long time to render, so all the node positions are cached, but is quite interesting to poke around in.</p>
           </div>
           <div class="extra">
           </div>
@@ -287,9 +293,11 @@
             <span class="date">September - October 2017</span>
           </div>
           <div class="description">
-            <p></p>
+            <p>I got the idea in my head that I could build a better course catalog. That thought almost killed me. After many failed attempts of getting program data, I found that the school moved their course catalog from a large pdf to a website. This allowed me to scrape the data, but still was no easy feat. It required many recursive queries, trimming and reorganizing the resulting tree, and calculating the credit counts based on the logical structure. This project never reached the vision that I had for it but the effort payed off as it formed the basis of the Requisite Graph, Courseplan, and Program Visualization</p>
           </div>
           <div class="extra">
+            <div class="ui label">puppeteer</div>
+            <div class="ui label">web scraping</div>
           </div>
         </div>
       </div>
@@ -305,9 +313,10 @@
             <span class="date">October 2017</span>
           </div>
           <div class="description">
-            <p></p>
+            <p>There was this game where you are moving around in a maze, but you can't change your direction unless your resting against a block. I don't know if this type of maze has a name, but I wanted to recreate it with the extra challenge of the mazes being auto-generated. The algorithm to generate these mazes took the good portion of a summer to figure out, and of course actually programming it always brings its own challenges. The easy part was creating the actual game. As it turns out humans are really bad at this type of maze, because the correct way to go is often not in the direction of the target. So, it results in just moving around randomly until you hit the target. Cool algorithm, bad game.</p>
           </div>
           <div class="extra">
+            <div class="ui label">canvas</div>
           </div>
         </div>
       </div>
@@ -323,9 +332,10 @@
             <span class="date">August 2017</span>
           </div>
           <div class="description">
-            <p></p>
+            <p>In discrete math, we played a game where we tried to find the shortest path of words between which only one letter can be changed (ex. life line mine mind) so of course I had to write a program to play the game. But as an extra challenge to myself I did it in python which I was not as familiar with.</p>
           </div>
           <div class="extra">
+            <div class="ui label">python</div>
           </div>
         </div>
       </div>
@@ -341,9 +351,12 @@
             <span class="date">May 2017</span>
           </div>
           <div class="description">
-            <p></p>
+            <p>Before we discovered puppeteer for browser automation, we used nightmarejs which frankly lives up to its name. One of the most difficult things to do in nightmare was perform some action for each element of in an array. Because that required chaining the asynchronous actions together and collecting the resulting figures. So, I wrote a small plugin which makes doing that a a lot easier.</p>
           </div>
           <div class="extra">
+            <div class="ui label">nightmare</div>
+            <div class="ui label">plugin</div>
+            <div class="ui label">npm</div>
           </div>
         </div>
       </div>
@@ -359,9 +372,10 @@
             <span class="date">April 2017</span>
           </div>
           <div class="description">
-            <p></p>
+            <p>I realized that 12 is half of !4 and 60 is half of !5. Which means that I can create a clock in which the hours, minutes, and seconds are represented by a specific ordering of 4 or 5 nodes. I created an algorithm to reference a specific order of nodes, so it is possible to calculate the time (described in the readme) it is just really difficult.</p>
           </div>
           <div class="extra">
+            <div class="ui label">jquery</div>
           </div>
         </div>
       </div>
@@ -377,9 +391,10 @@
             <span class="date">March 2017</span>
           </div>
           <div class="description">
-            <p>Huffman tree</p>
+            <p>In discrete math we learned about Huffman trees. Which is where you combine the smallest two elements until everything is a single tree. I realized that one application of this is to create a square pie chart (later I learned that they are actually called tree graphs, but I like my name better). Each rectangle's area corresponds to its proportion of the whole, just like a normal pie chart.</p>
           </div>
           <div class="extra">
+            <div class="ui label">canvas</div>
           </div>
         </div>
       </div>
@@ -395,7 +410,7 @@
             <span class="date">Febuary 2017</span>
           </div>
           <div class="description">
-            <p></p>
+            <p>This is identical to the previous Predictopoly project, except for I wanted to try figure out what the correspondence was between the average profit and chance of winning the game. So, I added a bunch of code to simulate a game, with players moving around the board and paying each other. Then ran 500 games (more than that causes quite a bit of lag) to see the probability of the player ending with the most money. </p>
           </div>
           <div class="extra">
           </div>
@@ -413,9 +428,12 @@
             <span class="date">Febuary - March 2017</span>
           </div>
           <div class="description">
-            <p></p>
+            <p>This was one of my first projects working for campus. I was tasked with creating a tool which generated and synced the Adobe connect groups for more than a 100 course sections. Learned to use the Adobe API, and how to construct a large project and proper interface.</p>
           </div>
           <div class="extra">
+            <div class="ui label">nodejs</div>
+            <div class="ui label">api</div>
+            <div class="ui label">Adobe Connect</div>
           </div>
         </div>
       </div>
@@ -431,7 +449,7 @@
             <span class="date">Febuary 2017</span>
           </div>
           <div class="description">
-            <p></p>
+            <p>I came across a video on YouTube which showed every possible android lock combination. The animation is mesmerizing, and I wanted to recreate the video in a website so that I could use it as a lock screen on my computer. I still pull this site up occasionally, and just stare at it, because it is so much fun to watch.</p>
           </div>
           <div class="extra">
             <div class="ui label">snap</div>
