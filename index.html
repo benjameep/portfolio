@@ -10,10 +10,13 @@
   <!-- gave in to the beast -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128382516-1"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-128382516-1');
+    (function(){
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-128382516-1');
+      (function(uid){uid && gtag('set', {'user_id': uid});})(window.location.search.slice(1));
+    })()
   </script>
 </head>
 
