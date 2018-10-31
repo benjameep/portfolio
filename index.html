@@ -14,8 +14,9 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'UA-128382516-1');
-      (function(uid){uid && gtag('set', {'user_id': uid});})(window.location.search.slice(1));
+      var uid = window.location.search.slice(1) || undefined
+      gtag('config', 'UA-128382516-1',{user_id: uid});
+      uid && gtag('event','they_found_me',{dimension1: uid});
     })()
   </script>
 </head>
